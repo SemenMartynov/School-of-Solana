@@ -2,8 +2,11 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
 	"name": "Ubuntu",
+	"containerName": "school-of-solana-3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:noble",
+
+	"runArgs": ["--userns=keep-id:uid=1000,gid=1000"],
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
